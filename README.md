@@ -29,7 +29,7 @@ You can download the training/testing samples for FireCube dataset from https://
 
 ......
 
-
+<!---
 ### Citation
 
 ```
@@ -40,10 +40,10 @@ You can download the training/testing samples for FireCube dataset from https://
   year={2022}
 
 ```
-
+-->
 ### Acknowledgments
 
 This work was funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) within the Collaborative Research Centre SFB 1502/1–2022 - [DETECT](https://sfb1502.de/) - [D05](https://sfb1502.de/projects/cluster-d/d05).
 
 ### License
-The code is released under MIT License (see LICENSE file for details).
+The code is released under MIT License. See the [LICENSE](LICENSE) file for details.

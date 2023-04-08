@@ -3,9 +3,15 @@
 ![License MIT](https://img.shields.io/badge/license-MIT-green.svg)
 
 # LOAN
-["**Location-aware Adaptive Normalization: A Deep Learning Approach for Wildfire Danger Forecasting**"](https://arxiv.org/abs/2212.08208) by [Mohamad Hakam Shams Eddin](https://hakamshams.github.io/), [Ribana Roscher](http://rs.ipb.uni-bonn.de/people/prof-dr-ing-ribana-roscher/) and [Juergen Gall](http://pages.iai.uni-bonn.de/gall_juergen/).
+"**Location-aware Adaptive Normalization: A Deep Learning Approach for Wildfire Danger Forecasting**" by [Mohamad Hakam Shams Eddin](https://hakamshams.github.io/), [Ribana Roscher](http://rs.ipb.uni-bonn.de/people/prof-dr-ing-ribana-roscher/) and [Juergen Gall](http://pages.iai.uni-bonn.de/gall_juergen/).
 
-### [Arxiv](https://arxiv.org/abs/2212.08208) |
+Code will be released soon!
+
+<!---
+["**Location-aware Adaptive Normalization: A Deep Learning Approach for Wildfire Danger Forecasting**"](https://arxiv.org/abs/2212.08208) by [Mohamad Hakam Shams Eddin](https://hakamshams.github.io/), [Ribana Roscher](http://rs.ipb.uni-bonn.de/people/prof-dr-ing-ribana-roscher/) and [Juergen Gall](http://pages.iai.uni-bonn.de/gall_juergen/).
+-->
+
+<!--- ### [Arxiv](https://arxiv.org/abs/2212.08208) | -->
 
 ![Example Mapping](images/figure1.jpg "Mapped ground truth from Mesh to LiDAR")
 
@@ -15,7 +21,7 @@
 
 ## Code
 
-Code will be released soon!
+......
 
 ......
 
@@ -25,7 +31,7 @@ Code will be released soon!
 
 ## Dataset
 
-You can download the training/testing samples for FireCube dataset from https://zenodo.org/record/6528394 (~250GB).
+<!---You can download the training/testing samples for FireCube dataset from https://zenodo.org/record/6528394 (~250GB).-->
 
 ......
 

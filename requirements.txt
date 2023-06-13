@@ -4,7 +4,7 @@
 _libgcc_mutex=0.1=main
 _openmp_mutex=5.1=1_gnu
 absl-py=1.4.0=pyhd8ed1ab_0
-aiohttp=3.7.4.post0=py310h6acc77f_1
+aiohttp>=3.7.4.post0=py310h6acc77f_1
 async-timeout=3.0.1=py_1000
 attrs=23.1.0=pyh71513ae_1
 blas=1.0=mkl
@@ -99,7 +99,7 @@ nss=3.89.1=h6a678d5_0
 numexpr=2.8.4=py310h8879344_0
 numpy=1.24.3=py310hd5efca6_0
 numpy-base=1.24.3=py310h8e6c178_0
-oauthlib=3.2.2=pyhd8ed1ab_0
+oauthlib>=3.2.2=pyhd8ed1ab_0
 openh264=2.1.1=h780b84a_0
 openssl=1.1.1t=h7f8727e_0
 packaging=22.0=py310h06a4308_0

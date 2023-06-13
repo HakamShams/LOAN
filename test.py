@@ -47,7 +47,7 @@ def parse_args():
                         type=str, default=r'./pretrained_models/pretrained_CNN_w_TE.pth', help='pretrained model')
 
     parser.add_argument('--data_dir', type=str,
-                        default=r'/home/shams/Projects/FireCube/Dataset/datasets/datasets_grl/npy/spatiotemporal',
+                        default=r'./datasets/datasets_grl/npy/spatiotemporal',
                         help='dataset path [default: None]')
     parser.add_argument('--log_dir', type=str, default=None, help='log name [default: None]')
     parser.add_argument('--dynamic_features', type=str, default=['1 km 16 days NDVI',

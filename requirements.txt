@@ -108,7 +108,7 @@ pcre=8.45=h9c3ff4c_0
 pillow=9.4.0=py310h6a678d5_0
 pip=23.0.1=py310h06a4308_0
 ply=3.11=py_1
-protobuf=3.20.1=py310hd8f1fbe_0
+protobuf>=3.20.2
 pyasn1=0.4.8=py_0
 pyasn1-modules=0.2.7=py_0
 pycparser=2.21=pyhd8ed1ab_0
@@ -130,7 +130,7 @@ qt-main=5.15.2=h8373d8f_8
 qt-webengine=5.15.9=hbbf29b9_6
 qtwebkit=5.212=h3fafdc1_5
 readline=8.2=h5eee18b_0
-requests=2.31.0=pyhd8ed1ab_0
+requests>=2.31.0=pyhd8ed1ab_0
 requests-oauthlib=1.3.1=pyhd8ed1ab_0
 rsa=4.9=pyhd8ed1ab_0
 setuptools=67.8.0=py310h06a4308_0
@@ -146,7 +146,7 @@ toml=0.10.2=pyhd8ed1ab_0
 torchaudio=0.12.1=py310_cu116
 torchmetrics=0.11.4=pyhd8ed1ab_0
 torchvision=0.13.1=py310_cu116
-tornado=6.1=py310h5764c6d_3
+tornado>=6.3.2
 tqdm=4.65.0=pyhd8ed1ab_1
 typing-extensions=4.6.3=hd8ed1ab_0
 typing_extensions=4.6.3=pyha770c72_0

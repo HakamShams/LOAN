@@ -1,0 +1,1059 @@
+
+<xarray.Dataset>
+Dimensions:             (time: 4560, x: 1253, y: 983)
+Coordinates:
+  * time                (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08...
+  * x                   (x) float64 18.7 18.71 18.72 18.73 ... 28.88 28.89 28.9
+  * y                   (y) float64 42.3 42.29 42.28 42.27 ... 34.32 34.31 34.3
+    band                int64 ...
+    spatial_ref         int64 ...
+Data variables: (12/90)
+    burned_areas        (time, y, x) float32 ...
+    ignition_points     (time, y, x) float32 ...
+    ndvi                (time, y, x) float32 ...
+    number_of_fires     (time) int16 ...
+    evi                 (time, y, x) float32 ...
+    et                  (time, y, x) float32 ...
+    ...                  ...
+    POP_DENS_2016       (y, x) float32 ...
+    POP_DENS_2017       (y, x) float32 ...
+    POP_DENS_2018       (y, x) float32 ...
+    POP_DENS_2019       (y, x) float32 ...
+    POP_DENS_2020       (y, x) float32 ...
+    POP_DENS_2021       (y, x) float32 ...
+Attributes:
+    temporal_extent:   (2009-03-06, 2021-08-29)
+    spatial_extent:    (18.7, 28.9, 34.3, 42.3)
+    crs:               EPSG:4326
+    license:           Creative Commons Attribution v4
+    creators:          Ioannis Prapas, Spyros Kondylatos, Ioannis Papoutsis
+    contact_person:    Ioannis Prapas <iprapas (at) noa.gr>
+    citation:          Ioannis Prapas, Spyros Kondylatos, & Ioannis Papoutsis...
+    acknowledgements:  This work has received funding from the European Union...
+    title:             FireCube: A Daily Datacube for the Modeling and Analys...
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 0 - burned_areas:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'unitless', 'long_name': 'Rasterized burned polygons', 'title': 'EFFIS (https://effis.jrc.ec.europa.eu/) burned areas burned as raster (value 1). Starting date retrieved with intersection with MODIS active fires'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 1 - ignition_points:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'unitless', 'long_name': 'Rasterized ignition points', 'title': 'Ignition points burned as raster (value 1) on the map calculated from intersection of MODIS active fires and EFFIS (https://effis.jrc.ec.europa.eu/) burned areas'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 2 - ndvi:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'unitless', 'long_name': '16-day NDVI', 'title': 'Normalized Difference Vegetation Index - MODIS/Terra Vegetation Indices 16-Day L3 Global 1 km SIN Grid'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 3 - number_of_fires:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'unitless', 'long_name': 'Daily number of fires', 'title': 'Daily number of fires'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 4 - evi:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'unitless', 'long_name': '16-day EVI', 'title': 'Enhanced vegetation index - MODIS/Terra Vegetation Indices 16-Day L3 Global 1 km SIN Grid (MOD13A2)'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 5 - et:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'kg/m^2/8day', 'long_name': '8-day Evapotranspiration', 'title': 'Total Evapotranspiration - MODIS/Terra Net Evapotranspiration 8-Day L4 Global 500 m SIN Grid (MOD16A2)'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 6 - lst_day:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'K', 'long_name': 'Day Land Surface Temperature', 'title': 'Day Land Surface Temperature (LST) - MODIS/Terra Land Surface Temperature/Emissivity Daily L3 Global 1 km SIN Grid (MOD11A1)'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 7 - lst_night:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'K', 'long_name': 'Night Land Surface Temperature', 'title': 'Night Land Surface Temperature (LST) - MODIS/Terra Land Surface Temperature/Emissivity Daily L3 Global 1 km SIN Grid (MOD11A1)'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 8 - fapar:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'long_name': 'Fraction of Absorbed Photosynthetically Active Radiation', 'units': '%', 'title': 'FPAR - MOD15A2H MODIS/Terra Gridded 500M (8-day composite)'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 9 - lai:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'unitless', 'long_name': 'Leaf Area Index', 'title': 'Leaf Area Index (LAI) - MOD15A2H MODIS/Terra Gridded 500M Leaf Area Index LAI (8-day composite)'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 10 - max_u10:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'm/s', 'long_name': 'Max 10 metre U wind component', 'title': 'Daily Maximum 10 metre U wind component ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 11 - max_v10:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'm/s', 'long_name': 'Max 10 metre V wind component', 'title': 'Daily Maximum  10 metre V wind component ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 12 - max_d2m:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'K', 'long_name': 'Max 2 metre dewpoint temperature', 'title': 'Daily Maximum 2 metre dewpoint temperature ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 13 - max_t2m:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'K', 'long_name': 'Max 2 metre temperature', 'title': 'Daily Maximum 2 metre temperature ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 14 - max_sp:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'standard_name': 'surface_air_pressure', 'units': 'Pa', 'long_name': 'Max Surface pressure', 'title': 'Daily Maximum Surface pressure ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 15 - max_tp:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'm', 'long_name': 'Max Total precipitation', 'title': 'Daily Maximum Total precipitation ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 16 - min_u10:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'm/s', 'long_name': 'Min 10 metre U wind component', 'title': 'Daily Minimum 10 metre U wind component ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 17 - min_v10:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'm/s', 'long_name': 'Min 10 metre V wind component', 'title': 'Daily Minimum 10 metre V wind component ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 18 - min_d2m:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'K', 'long_name': 'Min 2 metre dewpoint temperature', 'title': 'Daily Minimum 2 metre dewpoint temperature ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 19 - min_t2m:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'K', 'long_name': 'Min 2 metre temperature', 'title': 'Daily Minimum 2 metre temperature ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 20 - min_sp:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'standard_name': 'surface_air_pressure', 'units': 'Pa', 'long_name': 'Min Surface Pressure', 'title': 'Daily Minimum Surface pressure ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 21 - min_tp:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'm', 'long_name': 'Min Total precipitation', 'title': 'Daily Minimum Total precipitation ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 22 - avg_u10:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'm/s', 'long_name': 'Avg 10 metre U wind component', 'title': 'Daily Average 10 metre U wind component ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 23 - avg_v10:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'm/s', 'long_name': 'Avg 10 metre V wind component', 'title': 'Daily Average 10 metre V wind component ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 24 - avg_d2m:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'K', 'long_name': 'Avg 2 metre dewpoint temperature', 'title': 'Daily Average 2 metre dewpoint temperature ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 25 - avg_t2m:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'K', 'long_name': 'Avg 2 metre temperature', 'title': 'Daily Average 2 metre temperature ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 26 - avg_sp:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'standard_name': 'surface_air_pressure', 'units': 'Pa', 'long_name': 'Avg Surface pressure', 'title': 'Daily Average Surface pressure ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 27 - avg_tp:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'm', 'long_name': 'Avg total precipitation', 'title': 'Daily Average Total precipitation ERA5-Land'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 28 - smian:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'unitless', 'long_name': 'Soil moisture index anomaly', 'title': 'Soil Moisture Index Anomaly 10day, 5km Europe - EDO https://edo.jrc.ec.europa.eu/gdo/php/index.php?id=2112'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 29 - sminx:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'unitless', 'long_name': 'Soil moisture index', 'title': 'Soil Moisture Index 10day, 5km Europe - EDO https://edo.jrc.ec.europa.eu/gdo/php/index.php?id=2112'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 30 - fwi:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'unitless', 'long_name': 'Fire Weather Index', 'title': 'Fire Weather Index 0.25 deg - https://cds.climate.copernicus.eu/cdsapp#!/dataset/cems-fire-historical?tab=overview'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 31 - max_wind_u10:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'm/s', 'long_name': '10 metre U wind of Max Wind', 'title': 'Daily 10 metre U wind component of Maximum Wind'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 32 - max_wind_v10:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'm/s', 'long_name': '10 metre V wind of Max Wind', 'title': 'Daily 10 metre V wind component of Maximum Wind'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 33 - max_wind_speed:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'm/s', 'long_name': 'Max wind speed norm', 'title': 'Daily Maximum wind speed calculated from the U, V components'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 34 - max_wind_direction:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'degrees', 'long_name': 'Wind direction of Max Wind', 'title': 'Daily Maximum wind speed direction calculated from the U, V components'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 35 - max_rh:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '%', 'long_name': 'Max Relative humidity', 'title': 'Daily Maximum Relative humidity calculated from t2m and d2m'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 36 - min_rh:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '%', 'long_name': 'Min Relative humidity', 'title': 'Daily Minimum Relative humidity calculated from t2m and d2m'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 37 - avg_rh:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * time         (time) datetime64[ns] 2009-03-06T10:00:00 ... 2021-08-29T10:...
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '%', 'long_name': 'Avg Relative humidity', 'title': 'Daily Average Relative humidity calculated from t2m and d2m'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 38 - CLC_2006:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'RepresentationType': 'THEMATIC', 'units': 'unitless', 'long_name': 'Mode of Corine Land Cover 2006', 'title': 'Mode of Corine Land Cover 2006'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 39 - CLC_2006_0:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 0 (artificial_surfaces)', 'title': 'Fraction of class 0 (artificial surfaces), Corine Class Codes [1, 3, 4, 5, 6, 7, 8, 9 , 10, 11], for every grid cell, based on Corine Land Cover 2006'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 40 - CLC_2006_1:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 1 (discontinuous_urban)', 'title': 'Fraction of class 1 (discontinuous_urban), Corine Class Codes [2], for every grid cell, based on Corine Land Cover 2006'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 41 - CLC_2006_2:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 2 (arable_land)', 'title': 'Fraction of class 2 (arable_land), Corine Class Codes [12, 13, 14], for every grid cell, based on Corine Land Cover 2006'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 42 - CLC_2006_3:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 3 (permanent_crops)', 'title': 'Fraction of class 3 (permanent_crops), Corine Class Codes [15, 16, 17], for every grid cell, based on Corine Land Cover 2006'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 43 - CLC_2006_4:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 4 (pastures)', 'title': 'Fraction of class 4 (pastures), Corine Class Codes [18], for every grid cell, based on Corine Land Cover 2006'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 44 - CLC_2006_5:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 5 (general_agricultural)', 'title': 'Fraction of class 5 (general_agricultural), Corine Class Codes [19, 20, 21, 22], for every grid cell, based on Corine Land Cover 2006'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 45 - CLC_2006_6:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 6 (forest)', 'title': 'Fraction of class 6 (forest), Corine Class Codes [23, 24, 25], for every grid cell, based on Corine Land Cover 2006'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 46 - CLC_2006_7:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 7 (misc_vegetation)', 'title': 'Fraction of class 7 (misc_vegetation), Corine Class Codes [26, 27, 28, 29], for every grid cell, based on Corine Land Cover 2006'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 47 - CLC_2006_8:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 8 (misc_no_vegetation)', 'title': 'Fraction of class 8 (misc_no_vegetation), Corine Class Codes [30, 31, 32, 33, 34], for every grid cell, based on Corine Land Cover 2006'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 48 - CLC_2006_9:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 9 (water)', 'title': 'Fraction of class 9 (water), Corine Class Codes [>=35], for every grid cell, based on Corine Land Cover 2006'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 49 - CLC_2012:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'RepresentationType': 'THEMATIC', 'units': 'unitless', 'long_name': 'Mode of Corine Land Cover 2012', 'title': 'Mode of Corine Land Cover 2012'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 50 - CLC_2012_0:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 0 (artificial_surfaces)', 'title': 'Fraction of class 0 (artificial_surfaces), Corine Class Codes [1, 3, 4, 5, 6, 7, 8, 9 , 10, 11], for every grid cell, based on Corine Land Cover 2012'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 51 - CLC_2012_1:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 1 (discontinuous_urban)', 'title': 'Fraction of class 1 (discontinuous_urban), Corine Class Codes [2], for every grid cell, based on Corine Land Cover 2012'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 52 - CLC_2012_2:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 2 (arable_land)', 'title': 'Fraction of class 2 (arable_land), Corine Class Codes [12, 13, 14], for every grid cell, based on Corine Land Cover 2012'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 53 - CLC_2012_3:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 3 (permanent_crops)', 'title': 'Fraction of class 3 (permanent_crops), Corine Class Codes [15, 16, 17], for every grid cell, based on Corine Land Cover 2012'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 54 - CLC_2012_4:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 4 (pastures)', 'title': 'Fraction of class 4 (pastures), Corine Class Codes [18], for every grid cell, based on Corine Land Cover 2012'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 55 - CLC_2012_5:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 5 (general_agricultural)', 'title': 'Fraction of class 5 (general_agricultural), Corine Class Codes [19, 20, 21, 22], for every grid cell, based on Corine Land Cover 2012'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 56 - CLC_2012_6:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 6 (forest)', 'title': 'Fraction of class 6 (forest), Corine Class Codes [23, 24, 25], for every grid cell, based on Corine Land Cover 2012'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 57 - CLC_2012_7:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 7 (misc_vegetation)', 'title': 'Fraction of class 7 (misc_vegetation), Corine Class Codes [26, 27, 28, 29], for every grid cell, based on Corine Land Cover 2012'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 58 - CLC_2012_8:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 8 (misc_no_vegetation)', 'title': 'Fraction of class 8 (misc_no_vegetation), Corine Class Codes [30, 31, 32, 33, 34], for every grid cell, based on Corine Land Cover 2012'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 59 - CLC_2012_9:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 9 (water)', 'title': 'Fraction of class 9 (water), Corine Class Codes [>=35], for every grid cell, based on Corine Land Cover 2012'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 60 - CLC_2018:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'RepresentationType': 'THEMATIC', 'units': 'unitless', 'long_name': 'Mode of Corine Land Cover 2018', 'title': 'Mode of Corine Land Cover 2018'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 61 - CLC_2018_0:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 0 (artificial_surfaces)', 'title': 'Fraction of class 0 (artificial_surfaces), Corine Class Codes [1, 3, 4, 5, 6, 7, 8, 9 , 10, 11], for every grid cell, based on Corine Land Cover 2018'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 62 - CLC_2018_1:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 1 (discontinuous_urban)', 'title': 'Fraction of class 1 (discontinuous_urban), Corine Class Codes [2], for every grid cell, based on Corine Land Cover 2018'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 63 - CLC_2018_2:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 2 (arable_land)', 'title': 'Fraction of class 2 (arable_land), Corine Class Codes [12, 13, 14], for every grid cell, based on Corine Land Cover 2018'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 64 - CLC_2018_3:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 3 (permanent_crops)', 'title': 'Fraction of class 3 (permanent_crops), Corine Class Codes [15, 16, 17], for every grid cell, based on Corine Land Cover 2018'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 65 - CLC_2018_4:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 4 (pastures)', 'title': 'Fraction of class 4 (pastures), Corine Class Codes [18], for every grid cell, based on Corine Land Cover 2018'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 66 - CLC_2018_5:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 5 (general_agricultural)', 'title': 'Fraction of class 5 (general_agricultural), Corine Class Codes [19, 20, 21, 22], for every grid cell, based on Corine Land Cover 2018'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 67 - CLC_2018_6:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 6 (forest)', 'title': 'Fraction of class 6 (forest), Corine Class Codes [23, 24, 25], for every grid cell, based on Corine Land Cover 2018'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 68 - CLC_2018_7:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 7 (misc_vegetation)', 'title': 'Fraction of class 7 (misc_vegetation), Corine Class Codes [26, 27, 28, 29], for every grid cell, based on Corine Land Cover 2018'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 69 - CLC_2018_8:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 8 (misc_no_vegetation)', 'title': 'Fraction of class 8 (misc_no_vegetation), Corine Class Codes [30, 31, 32, 33, 34], for every grid cell, based on Corine Land Cover 2018'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 70 - CLC_2018_9:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': '/100 %', 'long_name': 'Fraction of lc class 9 (water)', 'title': 'Fraction of class 9 (water), Corine Class Codes [>=35], for every grid cell, based on Corine Land Cover 2018'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 71 - DEM:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'grid_mapping': 'spatial_ref', 'units': 'm', 'long_name': 'Elevation', 'title': 'Averaged Digital Elevation Model EU-DEM'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 72 - SLOPE:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'degrees', 'long_name': 'Slope', 'title': 'Slope calculated from Digital Elevation Model EU-DEM'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 73 - ASPECT:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'degrees', 'long_name': 'Aspect', 'title': 'Aspect calculated from Digital Elevation Model EU-DEM'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 74 - ROUGHNESS:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'unitless', 'long_name': 'Roughness', 'title': 'Roughness calculated from Digital Elevation Model EU-DEM'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 75 - ROAD_DISTANCE:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'meters', 'long_name': 'Distance from roads', 'title': 'Distance from major roads from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 76 - WATERWAY_DISTANCE:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'meters', 'long_name': 'Distance from waterways', 'title': 'Distance from major waterways from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 77 - POP_DENS_2009:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'humans/km^2', 'long_name': 'Population density (2009)', 'title': 'Population density for year 2009 from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 78 - POP_DENS_2010:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'humans/km^2', 'long_name': 'Population density (2010)', 'title': 'Population density for year 2010 from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 79 - POP_DENS_2011:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'humans/km^2', 'long_name': 'Population density (2011)', 'title': 'Population density for year 2011 from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 80 - POP_DENS_2012:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'humans/km^2', 'long_name': 'Population density (2012)', 'title': 'Population density for year 2012 from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 81 - POP_DENS_2013:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'humans/km^2', 'long_name': 'Population density (2013)', 'title': 'Population density for year 2013 from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 82 - POP_DENS_2014:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'humans/km^2', 'long_name': 'Population density (2014)', 'title': 'Population density for year 2014 from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 83 - POP_DENS_2015:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'humans/km^2', 'long_name': 'Population density (2015)', 'title': 'Population density for year 2015 from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 84 - POP_DENS_2016:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'humans/km^2', 'long_name': 'Population density (2016)', 'title': 'Population density for year 2016 from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 85 - POP_DENS_2017:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'humans/km^2', 'long_name': 'Population density (2017)', 'title': 'Population density for year 2017 from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 86 - POP_DENS_2018:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'humans/km^2', 'long_name': 'Population density (2018)', 'title': 'Population density for year 2018 from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 87 - POP_DENS_2019:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'humans/km^2', 'long_name': 'Population density (2019)', 'title': 'Population density for year 2019 from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 88 - POP_DENS_2020:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'humans/km^2', 'long_name': 'Population density (2020)', 'title': 'Population density for year 2020 from Worldpop'}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 89 - POP_DENS_2021:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Coordinates:
+  * x            (x) float64 18.7 18.71 18.72 18.73 ... 28.87 28.88 28.89 28.9
+  * y            (y) float64 42.3 42.29 42.28 42.27 ... 34.33 34.32 34.31 34.3
+    band         int64 ...
+    spatial_ref  int64 ...
+{'units': 'humans/km^2', 'long_name': 'Population density (2021)', 'title': 'Population density for year 2021 from Worldpop'}

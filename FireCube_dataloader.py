@@ -484,7 +484,7 @@ class FireCubeLoader(Dataset):
 
 if __name__ == '__main__':
 
-    root = '/home/shams/Projects/FireCube/Dataset/datasets/datasets_grl/npy/spatiotemporal'
+    root = './datasets/datasets_grl/npy/spatiotemporal'
 
     dynamic_features = [
         '1 km 16 days NDVI',

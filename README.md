@@ -68,17 +68,18 @@ Pretrained models can be downloaded from [pretrained_models](pretrained_models)
 If you find our work useful in your research, please cite:
 
 ```
-@ARTICLE{10149031,
-  author={Eddin, Mohamad Hakam Shams and Roscher, Ribana and Gall, Juergen},
+@ARTICLE{LOAN,
+  author={Shams Eddin, Mohamad Hakam and Roscher, Ribana and Gall, Juergen},
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={Location-aware Adaptive Normalization: A Deep Learning Approach For Wildfire Danger Forecasting}, 
+  title={Location-Aware Adaptive Normalization: A Deep Learning Approach for Wildfire Danger Forecasting}, 
   year={2023},
-  volume={},
+  volume={61},
   number={},
-  pages={1-1},
+  pages={1-18},
   doi={10.1109/TGRS.2023.3285401}}
+
   
-@article{Eddin2022LocationawareAD,
+@article{LOAN,
   title={Location-aware Adaptive Denormalization: A Deep Learning Approach For Wildfire Danger Forecasting},
   author={Mohamad Hakam Shams Eddin and Ribana Roscher and Juergen Gall},
   journal={ArXiv},
